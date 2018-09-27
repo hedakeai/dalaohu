@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>天气app</title>
+		<link rel="stylesheet" type="text/css" href="css/weatherapp.css"/>
+		<script type="text/javascript"src="jQuery.js/rem.js"></script>
+		<script type="text/javascript" src="jQuery.js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="jQuery.js/weather.js"></script>
+	</head>
+	<body>
+		<div class="first">
+		<div class="container">
+			<img src="img/screen.png" alt="" class="pic-a"/>
+			<p class="location">
+				<i></i>
+				<span class="arrdess">北京市</span>
+				
+			</p>
+			<div class="positive">
+				<p>40</p>
+				<p>优</p>
+			</div>
+			<img src="img/pic.png" class="pic"/>
+			<span class="tem">0°</span>
+			<span class="tem-a">晴</span>
+			<p class="tem-b">
+				<span class="wind">湿度</span>
+				<span class="windstrong">28%</span>
+			</p>
+			<span class="tem-c">天冷了，注意保暖~</span>
+		</div>
+		<div class="tomorrow">
+			<div class="tomorrow-a">
+				<p>
+					<span class="goleft">今天</span>
+					<span class="goright tempreture">2/-11°</span>
+				</p>
+				<p>
+					<span class="goleft tem1">
+						晴转多云
+					</span>
+					<img src="" alt="" class="todaytem"/>
+				</p>
+			</div>
+			<div class="tomorrow-b"></div>
+			<div class="tomorrow-c">
+				<p>
+					<span class="goleft">明天</span>
+					<span class="esp">3/-13°</span>
+				</p>
+				<p>
+					<span class="goleft tem2">
+						晴
+					</span>
+					<img src="" alt="" class="tomorrowtem"/>
+				</p>
+			</div>
+		</div>
+		<div class="hours">
+			<ul>
+			</ul>
+		</div>
+		<div class="days">
+			<ul class="srcoll">
+				
+			</ul>
+		</div>
+		<div class="living">
+			<ul>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+				<li class="item">
+					<img src="img/wash.svg"/>
+					<span class="comforteble">较适宜</span>
+					<span class="car">洗车</span>
+				</li>
+			</ul>
+		</div>
+		<div class="footer">数据来源于中国天气网</div>
+		</div>
+		<div class="search-city">
+		<div class="search">
+			<div class="search-input">
+				<input type="text" name="" id="" value="" placeholder="搜索地区/景点"/>
+				<i></i>
+			</div>
+			<span class="cancel">取消</span>
+		</div>
+		<div class="nowlocation">
+			<p class="location">当前定位</p>
+		</div>
+		<div class="his">
+			<p class="history">历史记录</p>
+			<ul>
+				<li class="item">故宫</li>
+				<li class="item">颐和园</li>
+			</ul>
+		</div>
+		<div class="hot-city">
+			<p class="hot">热门城市</p>
+			<ul class="city">
+			</ul>
+			<p class="vistor">热门景点</p>
+			<ul class="vis">
+				<li class="item">故宫</li>
+				<li class="item">颐和园</li>
+				<li class="item">九寨沟</li>
+				<li class="item">凤凰古城</li>
+				<li class="item">秦始皇陵</li>
+				<li class="item">龙门石窟</li>
+				<li class="item">武陵源</li>
+				<li class="item">华山</li>
+				<li class="item">黄山</li>
+			</ul>
+		</div>
+	   </div>
+	</body>
+</html>

@@ -1,0 +1,451 @@
+*{
+	margin: auto;
+	padding: 0;
+	box-sizing: border-box;
+	list-style: none;
+}
+.body{
+	background: #b0b0b0;
+}
+.container{
+	width: 100%;
+	height: 11rem;
+	background: linear-gradient(-90deg,#50ade8,#7ae0fa);
+	padding: 0.36rem 0.48rem 0;
+	position: relative;
+}
+.container .pic-a{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+.location{
+	width: 76%;
+	height: 0.32rem;
+    font-size: 0.32rem;
+    line-height: 0.32rem;
+    text-align: center;
+    color: #fff;
+}
+.positive{
+	width: 0.76rem;
+	height: 0.88rem;
+	background: #a3d765;
+	border-radius: 0.16rem;
+	box-shadow: 0 0.02rem 0.01rem 0 rgba(0,0,0,.12);
+	padding: 0.16rem 0.24rem;
+	float: left;
+	margin-top: 1.34rem;
+	margin-left: -0.32rem;
+	text-align: center;
+}
+.positive p{
+	height: 0.24rem;
+	font-size: 0.24rem;
+	opacity: .8rem;
+	line-height: 0.24rem;
+	color: #fff;
+	margin-bottom: 0.06rem;
+}
+.pic{
+	float: right;
+}
+.tem{
+	display: block;
+	width: 100%;
+	height: 1.24rem;
+	text-align: center;
+	line-height: 1.24rem;
+	font-size: 1.52rem;
+	margin-left: 0.3rem;
+	color: #FFFFFF;
+	margin-top: 3rem;
+}
+.tem-a{
+	display: block;
+	width: 100%;
+	height: 0.44rem;
+	font-size: 0.44rem;
+	color: #FFFFFF;
+	line-height: 0.44rem;
+	text-align: center;
+	margin-top: 0.16rem;
+}
+.tem-b{
+	width: 2rem;
+	margin-top: 0.16rem;
+	height: 0.28rem;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.tem-b span{
+	display: block;
+	font-size: 0.28rem;
+	color: #fff;
+}
+.tem-c{
+	display: block;
+	height: 0.32rem;
+	font-size: 0.32rem;
+	line-height: 1.5;
+	color: #fff;
+	margin: 1rem 1.2rem 0;
+	text-align: center;
+}
+.tomorrow{
+	width: 100%;
+	height: 2.06rem;
+	border-bottom: 0.02rem solid #e4e4e4;
+	padding:0.52rem 0.48rem 0.52rem;
+	margin-bottom: 0.2rem;
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+}
+.tomorrow-a, .tomorrow-c{
+	width: 3.76rem;
+	height: 1.04rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.tomorrow-b{
+	width: 0.02rem;
+	height: 1.04rem;
+	background: #f0f0f0;
+	position: absolute;
+	left: 50%;
+	top: 0;
+	bottom: 0;
+	margin: auto 0;
+	transform: translateX(-50%);
+}
+.tomorrow .tomorrow-a p{
+	width: 100%;
+	height: 0.28rem;
+	font-size: 0.28rem;
+	line-height: 0.28rem;
+	color: #434343;
+}
+.goleft{
+	float: left;
+}
+.goright{
+	float: right;
+}
+.todaytem{
+	float: right;
+}
+.tomorrow-a p img{
+	width: 0.48rem;
+	height: 0.48rem;
+}
+.tomorrow-c p{
+	width: 100%;
+	height: 0.28rem;
+	font-size: 0.28rem;
+	line-height: 0.28rem;
+	color: #434343;
+	display: flex;
+	justify-content: space-between;
+}
+.tomorrow-c p img{
+	width: 0.48rem;
+	height: 0.48rem;
+	margin-right: -0.01rem;
+}
+.tomorrow-c span{
+	margin-left: -0.02rem;
+}
+.tomorrow-c .esp{
+	margin-right: -0.02rem;
+}
+.hours{
+	width: 100%;
+	height: 2.72rem;
+	border-top: 0.02rem solid #E4E4E4;
+	border-bottom: 0.02rem solid #E4E4E4;
+	overflow-x: auto;
+	overflow-y: hidden;
+	padding-top: 0.6rem;
+	margin-bottom: 0.2rem;
+}
+.hours ul{
+	width: 30.2rem;
+	height: 100%;
+	
+}
+.hours ul .item{
+	width: 1.16rem;
+	height: 1.6rem;
+	float: left;
+	text-align: center;
+}
+.item-time{
+	font-size: 0.24rem;
+	height: 0.24rem;
+	color: #999;
+}
+.item-degree{
+	font-size: 0.28rem;
+	height: 0.28rem;
+	color: #434343;
+}
+.hours ul .item img{
+	width: 0.48rem;
+	height: 0.48rem;
+}
+.days{
+	width: 100%;
+	height: 7.92rem;
+	border-top: 0.02rem solid #E4E4E4;
+	border-bottom: 0.02rem solid #E4E4E4;
+	background: #FFFFFF;
+	padding-top: 0.5rem;
+	margin-bottom: 0.2rem;
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: relative;
+}
+.srcoll{
+	width: 20.4rem;
+	height: 6.84rem;
+
+}
+.srcoll .item{
+	width: 1.26rem;
+	height: 100%;
+	text-align: center;
+	float: left;
+}
+.day{
+	font-size: 0.24rem;
+	color: #b2b2b2;
+	height: 0.24rem;
+	line-height: 0.24rem;
+}
+.date{
+	font-size: 0.24rem;
+	color: #b2b2b2;
+	height: 0.24rem;
+	line-height: 0.24rem;
+	margin: 0.1rem 0 0.3rem;
+	text-align: center;
+}
+.datetime{
+	width: 1.26rem;
+	height: 1.04rem;
+	text-align: center;
+
+}
+.weather{
+	font-size: 0.24rem;
+	color: #B2B2B2;
+	height: 0.24rem;
+	margin-bottom: 0.24rem;
+	line-height: 0.24rem;
+	text-align: center;
+}
+.icon{
+	float: left;
+	margin-top: -0.12rem;
+	margin-left: 50%;
+	transform: translateX(-50%);	
+}
+.night{
+	margin-top: 2.72rem;
+}
+.winds{
+	width: 0.8rem;
+	font-size: 0.24rem;
+	height: 0.24rem;
+	line-height: 0.24rem;
+	color: #B2B2B2;
+	margin: 0 auto 0.12rem;
+	overflow: hidden;
+}
+.living{
+	width: 100%;
+	height: 3.8rem;
+	border-top: 0.02rem solid #E4E4E4;
+	border-bottom: 0.02rem solid #E4E4E4;
+	background: #E4E4E4;
+	overflow-y: hidden;
+	overflow-x: auto;
+}
+.living ul{
+	width: 15.4rem;
+	height: 3.8rem;
+}
+.living .item{
+	width: 1.9rem;
+	height: 1.88rem;
+	float: left;
+	margin-right: 0.02rem;
+	margin-bottom: 0.02rem;
+	background: #FFf;
+	position: relative;
+}
+.living .item img{
+	width: 0.48rem;
+	height: 0.48rem;
+	margin: 0.3rem auto 0.2rem;
+	display: block;
+}
+.living .item .comforteble{
+	display: block;
+	font-size: 0.28rem;
+	line-height: 0.28rem;
+	height: 0.28rem;
+	width: 100%;
+	text-align: center;
+	color: #434343;
+}
+.living .item .car{
+	display: block;
+	font-size: 0.24rem;
+	height: 0.24rem;
+	width: 100%;
+	line-height: 0.24rem;
+	color: #999;
+	text-align: center;
+}
+.footer{
+	width: 100%;
+	height: 2rem;
+	background: #fff;
+	text-align: center;
+	line-height: 2rem;
+	font-size: 0.48rem;
+	color: #999999;
+}
+.search-city{
+	width: 100%;
+	height: 30rem;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 2;
+	background-color: #fff;
+	display: none;
+}
+.search{
+	width: 100%;
+	height: 0.9rem;
+	text-align: center;
+	line-height: 0.9rem;
+	padding: 0.14rem 0.48rem 0;
+	border-bottom: 0.02rem solid #eee;
+}
+.search-input{
+	width: 7rem;
+	height: 0.6rem;
+    border-radius: 0.4rem;
+    float: left;
+    background: #f2f2f2;
+}
+input{
+	width: 90%;
+	height: 80%;
+	border: none;
+	background: #f2f2f2;
+	float: right;
+	margin-top: 0.06rem;
+	margin-right: 0.3rem;
+}
+.search .cancel{
+	display: block;
+	width: 1.2rem;
+	font-size: 0.28rem;
+	height: 0.6rem;
+	line-height: 0.6rem;
+	text-align: center;
+	float: right;
+}
+.his{
+	width: 100%; 
+	height: 2rem;
+	padding: 0.48rem 0.48rem 0;
+}
+.history{
+	font-size: 0.32rem;
+	color: #434343;
+}
+.his ul .item{
+	width: 2.8rem;
+	height: 0.64rem;
+	background: #F2F2F2;
+	text-align: center;
+	line-height: 0.64rem;
+	border-radius: 0.44rem;
+	float: left;
+	margin-left: 0.03rem;
+	margin-right: 0.11rem;
+	margin-bottom: 0.3rem;
+	font-size: 0.28rem;
+	margin-top: 0.2rem;
+	color: #333;
+}
+.hot-city{
+	width: 100%;
+	height: 12rem;
+	padding: 0.48rem 0.48rem 0;
+	overflow: hidden;
+}
+.hot-city .hot{
+	width: 100%;
+	height: 0.44rem;
+	font-size: 0.32rem;
+	color: #434343;
+}
+.hot-city .city{
+	width: 100%;
+	height: 3.52rem;
+	margin-top: 0.1rem;
+}
+.hot-city .city .item{
+	width: 2.8rem;
+	height: 0.64rem;
+	background: #F2F2F2;
+	text-align: center;
+	line-height: 0.64rem;
+	border-radius: 0.44rem;
+	float: left;
+	margin-left: 0.03rem;
+	margin-right: 0.11rem;
+	margin-bottom: 0.3rem;
+	font-size: 0.28rem;
+	color: #333;
+}
+.vistor{
+	width: 100%;
+	height: 0.44rem;
+	font-size: 0.32rem;
+	color: #434343;
+	position: absolute;
+	left: 0.48rem;
+	top: 15.6rem;
+}
+.vis{
+	width: 100%;
+	height: 2.64rem;
+	position: absolute;
+	left: 0.48rem;
+	top: 16rem;
+}
+.vis .item{
+	width: 2.8rem;
+	height: 0.64rem;
+	background: #F2F2F2;
+	text-align: center;
+	line-height: 0.64rem;
+	border-radius: 0.44rem;
+	float: left;
+	margin-left: 0.03rem;
+	margin-right: 0.11rem;
+	margin-bottom: 0.3rem;
+	font-size: 0.28rem;
+	color: #333;
+}
