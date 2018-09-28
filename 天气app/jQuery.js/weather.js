@@ -2,7 +2,7 @@
 	let weathers;
 	$.ajax({
        type: "get",
-       url:"https://www.toutiao.com/stream/widget/local_weather/data/?city",
+       url:"https://www.toutiao.com/stream/widget/local_weather/data/?city=太原",
        dataType: "jsonp",
        success:function(obj){
        	weathers=obj.data;
@@ -135,9 +135,3 @@ window.onload=function(){
 
 }
 
-
-//流程
-// 获取默认城市的天气信息
-// 获取所有城市的天气信息
-// 点击某个城市获取当前城市的天气信息
-// 在搜索框内输入所要搜索的城市，点击搜索按钮可以进行搜索
