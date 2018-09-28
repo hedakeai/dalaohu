@@ -11,7 +11,7 @@
        }
 	});
      function updata(weathers){
-       $(".arrdess").html(weathers.city);
+       $(".arrdess").html(weathers.city_name);
        //当前城市天气状况
        $(".tem").html(weathers.weather.current_temperature+"°");
        $(".tem-a").html(weathers.weather.current_condition);
