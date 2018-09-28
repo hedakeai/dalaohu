@@ -28,6 +28,9 @@
     text-align: center;
     color: #fff;
 }
+.location i{
+	font-size: 0.4rem;
+}
 .positive{
 	width: 0.76rem;
 	height: 0.88rem;
