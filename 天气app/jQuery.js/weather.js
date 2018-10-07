@@ -1,8 +1,10 @@
-       //首页天气
+            //首页天气
 	let weathers;
+	let dataa=[];
+	console.log(dataa)
 	$.ajax({
        type: "get",
-       url:"https://www.toutiao.com/stream/widget/local_weather/data/?city=太原",
+       url:"https://www.toutiao.com/stream/widget/local_weather/data/?city",
        dataType: "jsonp",
        success:function(obj){
        	weathers=obj.data;
@@ -11,7 +13,7 @@
        }
 	});
      function updata(weathers){
-       $(".arrdess").html(weathers.weather.city_name);
+       $(".arrdess").html(weathers.city);
        //当前城市天气状况
        $(".tem").html(weathers.weather.current_temperature+"°");
        $(".tem-a").html(weathers.weather.current_condition);
@@ -37,6 +39,7 @@
        })
 
        let forest=$(weathers.weather.forecast_list)
+       let dataa=$(weathers.weather.forecast_list.)
        $(".srcoll").html("") ; 
        forest.each(function(index,val){
               let str=`<li class="item">
@@ -119,9 +122,8 @@ window.onload=function(){
                 updata(con);
               }
        })
- }
-
-       $(".location").click(function(){
+     
+     $(".location").click(function(){
        $(".search-city").css({"display":"block"});
        $(".first").css({"display":"none"});
       })
@@ -129,9 +131,49 @@ window.onload=function(){
        $(".search-city").css({"display":"none"});
        $(".first").css({"display":"block"})
      })
+}
+       let myChart = echarts.init(document.querySelector('.box'));
+		 
+		let option = {
+    xAxis:  {
+        type: 'category',
+        show: false,
+        boundaryGap: false,
+        data: ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15']
+    },
+    yAxis: {
+        type: 'value',
+        show: false,
+        axisLabel: {
+            formatter: '{value} °C'
+        }
+    },
+    series: [
+        {
+            name:'最高气温',
+            type:'line',
+            data:[11, 11, 15, 13, 12, 13, 10],
+        },
+        {
+            name:'最低气温',
+            type:'line',
+            data:[1, -2, 2, 5, 3, 2, 0],
+        }
+    ]
+};
+
+
+		 
+		 
+		 
+		 myChart.setOption(option);
+     
+ }
 
        
-   
 
-}
-
+//流程
+// 获取默认城市的天气信息
+// 获取所有城市的天气信息
+// 点击某个城市获取当前城市的天气信息
+// 在搜索框内输入所要搜索的城市，点击搜索按钮可以进行搜索
